@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Changer in PKR</title>
+    <!-- OWN CSS LINK -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Currency Changer in PKR</h1>
+        
+        <label for="currency">Select Currency</label>
+        <select id="currency">
+            <option value="usd">US Dollar</option>
+            <option value="sar">Saudi Riyal</option>
+            <option value="eur">Euro</option>
+            <option value="gbp">British Pound</option>
+            <option value="aed">UAE Dirham</option>
+            <option value="aud">Australian Dollar</option>
+            <option value="inr">Indian Rupee</option>
+        </select>
+
+        <label for="amount">Enter Amount</label>
+        <input type="number" id="amount" placeholder="Enter amount" required>
+
+        <button onclick="convertCurrency()">Convert to PKR</button>
+
+        <div class="result" id="result">
+            <!-- Conversion result will be displayed here -->
+        </div>
+    </div>
+
+
+    <!-- OWN JAVA SCRIPT LINK -->
+    <script src="script.js"></script>
+</body>
+
+</html>
